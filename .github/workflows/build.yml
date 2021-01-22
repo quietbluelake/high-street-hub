@@ -31,8 +31,8 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: CI=true npm test
-      env:
-        CI: true
+        env:
+          CI: true
       - run: npm run build
       - name: Run e2e tests
         uses: cypress-io/github-action@v2
