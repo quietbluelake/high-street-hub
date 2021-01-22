@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: ng test --watch=false
+      - run: npm test
       - run: npm run build
       - name: Run e2e tests
         uses: cypress-io/github-action@v2
