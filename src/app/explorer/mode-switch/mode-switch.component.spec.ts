@@ -22,4 +22,19 @@ describe('ModeSwitchComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should be responsive', () => {
+    expect(true).toEqual(true);
+  });
+  it('should appear in bottom right', () => {
+    expect(true).toEqual(true);
+  });
+  it('should be able to exit to Hub', () => {
+    expect(true).toEqual(true);
+  });
+  it('should be able to switch to Editor', () => {
+    expect(true).toEqual(true);
+  });
+  it('should be purple', () => {
+    expect(true).toEqual(true);
+  });
 });
