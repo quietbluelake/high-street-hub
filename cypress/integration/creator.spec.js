@@ -16,7 +16,7 @@ describe('Creator', () => {
     it('Can use tools to modify an entity once it is connected to a tile', () => {
 
     });
-    it('If I drag an entity onto an occupied tile, the old entity should be replaced with the new one', () => {
+    it('If I drag an entity onto an occupied tile, the old entity should not be replaced, to avoid mistakes', () => {
 
     });
     it('Can rotate entity', () => {
