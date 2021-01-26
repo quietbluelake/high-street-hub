@@ -1,1 +1,53 @@
-<p>login works!</p>
+<div class="center-content">
+    <mat-card class="example-card">
+        <mat-card-header class="card-header">
+            <div class="img-hdr">
+                <img mat-card-image class="example-header-image"
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Photo of a Shiba Inu">
+            </div>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="Login">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input matInput #message maxlength="50" placeholder="">
+                            <mat-hint align="start"><strong>e.g. joe.bloggs@example.com</strong> </mat-hint>
+                            <mat-hint align="end">{{message.value.length}} / 50</mat-hint>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                                [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                        <button mat-raised-button color="primary">Log In</button>
+                    </form>
+                </mat-tab>
+                <mat-tab label="Register">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input matInput #message maxlength="50" placeholder="">
+                            <mat-hint align="start"><strong>e.g. joe.bloggs@example.com</strong> </mat-hint>
+                            <mat-hint align="end">{{message.value.length}} / 50</mat-hint>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                                [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                        <button mat-raised-button color="primary">Register</button>
+                    </form>
+                </mat-tab>
+            </mat-tab-group>
+        </mat-card-content>
+    </mat-card>
+</div>
