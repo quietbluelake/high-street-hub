@@ -11,6 +11,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   declarations: [LoginComponent, UserAuthenticationComponent],
@@ -21,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatTabsModule,
     MatInputModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    FlexLayoutModule
   ]
 })
 export class LoginModule { }
