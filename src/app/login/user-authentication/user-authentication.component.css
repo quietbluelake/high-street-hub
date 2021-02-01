@@ -1,0 +1,35 @@
+.example-card {
+    max-width: 400px;
+}
+
+.card-header {
+    padding-top: 35px;
+}
+  
+.example-header-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+}
+
+.img-hdr {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.center-content {
+    text-align: -webkit-center;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    margin-top: 10px;
+    width: 100%;
+}
