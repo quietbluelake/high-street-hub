@@ -13,8 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -29,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatProgressSpinnerModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule
   ]
 })
 export class LoginModule { }

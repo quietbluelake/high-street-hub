@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { HubRoutingModule } from './hub-routing.module';
 import { HubComponent } from './hub.component';
@@ -11,7 +12,8 @@ import { WikiComponent } from './wiki/wiki.component';
   declarations: [HubComponent, ActionsComponent, WikiComponent],
   imports: [
     CommonModule,
-    HubRoutingModule
+    HubRoutingModule,
+    RouterModule
   ]
 })
 export class HubModule { }

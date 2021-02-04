@@ -1,16 +1,30 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from "@angular/router/testing";
 
 import { UserAuthenticationComponent } from './user-authentication.component';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 describe('UserAuthenticationComponent', () => {
   let component: UserAuthenticationComponent;
   let fixture: ComponentFixture<UserAuthenticationComponent>;
+  let httpClient: HttpClient;
+  let httpTestingController: HttpTestingController;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientTestingModule,
+        RouterTestingModule
+      ],
       declarations: [ UserAuthenticationComponent ]
     })
     .compileComponents();
+    httpClient = TestBed.inject(HttpClient);
+    httpTestingController = TestBed.inject(HttpTestingController);
   });
 
   beforeEach(() => {

@@ -1,16 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { RouterTestingModule } from "@angular/router/testing";
 
 import { HubComponent } from './hub.component';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 describe('HubComponent', () => {
   let component: HubComponent;
   let fixture: ComponentFixture<HubComponent>;
+  let httpClient: HttpClient;
+  let httpTestingController: HttpTestingController;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule, RouterTestingModule],
       declarations: [ HubComponent ]
     })
     .compileComponents();
+    httpClient = TestBed.inject(HttpClient);
+    httpTestingController = TestBed.inject(HttpTestingController);
   });
 
   beforeEach(() => {
