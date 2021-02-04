@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HubComponent } from './hub.component';
 
-const routes: Routes = [{ path: '', component: HubComponent }];
+import { AuthGuard } from '@app/_helpers';
+
+const routes: Routes = [{ path: '', component: HubComponent, canActivate: [AuthGuard] }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

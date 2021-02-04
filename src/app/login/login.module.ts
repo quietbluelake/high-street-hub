@@ -10,8 +10,11 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,7 +27,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    MatProgressSpinnerModule,
+    FlexLayoutModule,
+    ReactiveFormsModule
   ]
 })
 export class LoginModule { }
